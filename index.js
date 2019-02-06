@@ -1,7 +1,9 @@
+var num = 7;
 
-function takeANumber(people, name){
-  people.push(name);
-  return (`Welcome, ${name}. You are number ${people.length} in line.`);
+function takeANumber(people){
+  num++ 
+  people.push(num);
+  return `Welcome, . You are number ${num} in line.`;
 } 
 
 function nowServing(katzDeliLine){
@@ -17,7 +19,8 @@ function nowServing(katzDeliLine){
   return (`Currently serving ${katzDeliLine.shift()}.`);
 }
 
-var newline = []
+var newline = [];
+
 function currentLine(line){
  let i = 0;
   while (i < line.length){
